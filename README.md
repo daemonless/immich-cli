@@ -12,7 +12,7 @@ Source: dbuild templates
 
 | | |
 |---|---|
-| **Registry** | `ghcr.io/jtrotsky/immich-cli` |
+| **Registry** | `ghcr.io/daemonless/immich-cli` |
 | **Source** | []() |
 
 ## Version Tags
@@ -32,7 +32,7 @@ Before deploying, ensure your host environment is ready. See the [Quick Start Gu
 ```yaml
 services:
   immich-cli:
-    image: "ghcr.io/jtrotsky/immich-cli:latest"
+    image: "ghcr.io/daemonless/immich-cli:latest"
     container_name: immich-cli
     restart: unless-stopped
 ```
@@ -41,7 +41,7 @@ services:
 
 ```bash
 podman run -d --name immich-cli \
-  ghcr.io/jtrotsky/immich-cli:latest
+  ghcr.io/daemonless/immich-cli:latest
 ```
 
 ### Ansible
@@ -50,7 +50,7 @@ podman run -d --name immich-cli \
 - name: Deploy immich-cli
   containers.podman.podman_container:
     name: immich-cli
-    image: "ghcr.io/jtrotsky/immich-cli:latest"
+    image: "ghcr.io/daemonless/immich-cli:latest"
     state: started
     restart_policy: always
 ```
@@ -58,3 +58,7 @@ podman run -d --name immich-cli \
 **Architectures:** amd64
 **User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
 **Base:** FreeBSD 15.0
+
+---
+
+Need help? Join our [Discord](https://discord.gg/Kb9tkhecZT) community.

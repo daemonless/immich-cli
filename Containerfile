@@ -12,7 +12,7 @@
 # Upstream: https://github.com/immich-app/immich (packages/cli)  — npm @immich/cli (AGPL-3.0)
 
 ARG BASE_TAG=15-pkg
-ARG IMMICH_CLI_VERSION=2.7.5
+ARG IMMICH_CLI_VERSION="latest"
 
 # base-core = minimal FreeBSD, NO service supervision (no s6) — the right base for
 # a one-shot CLI rather than the supervised `base` used by services (per ahze).
@@ -37,6 +37,7 @@ LABEL org.opencontainers.image.title="immich-cli" \
 # prebuilt py311 wheels to dodge cargo). Pin the exact version for reproducibility.
 RUN pkg update && pkg install -y ca_root_nss node22 npm-node22 \
     && npm install -g @immich/cli@${IMMICH_CLI_VERSION} \
+    && npm list -g @immich/cli --depth=0 | sed 's/.*@//' > /app/version \
     && npm cache clean --force \
     && pkg clean -ay && rm -rf /var/cache/pkg/* /root/.npm
 

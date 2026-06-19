@@ -21,38 +21,13 @@ Source: dbuild templates
 | :--- | :--- | :--- |
 | `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
 
-## Prerequisites
-
-Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
-
 ## Deployment
-
-### Podman Compose
-
-```yaml
-services:
-  immich-cli:
-    image: "ghcr.io/daemonless/immich-cli:latest"
-    container_name: immich-cli
-    restart: unless-stopped
-```
 
 ### Podman CLI
 
 ```bash
-podman run -d --name immich-cli \
+podman run --rm \
   ghcr.io/daemonless/immich-cli:latest
-```
-
-### Ansible
-
-```yaml
-- name: Deploy immich-cli
-  containers.podman.podman_container:
-    name: immich-cli
-    image: "ghcr.io/daemonless/immich-cli:latest"
-    state: started
-    restart_policy: always
 ```
 
 **Architectures:** amd64

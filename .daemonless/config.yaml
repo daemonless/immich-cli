@@ -1,6 +1,9 @@
 # dbuild configuration — immich-cli
 # Full reference: https://github.com/daemonless/dbuild
 
+x-daemonless:
+  class: cli
+
 build:
   variants:
     - tag: latest

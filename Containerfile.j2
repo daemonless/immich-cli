@@ -31,7 +31,8 @@ LABEL org.opencontainers.image.title="immich-cli" \
 # prebuilt py311 wheels to dodge cargo). Pin the exact version for reproducibility.
 RUN pkg update && pkg install -y ca_root_nss node22 npm-node22 \
     && npm install -g @immich/cli@${IMMICH_CLI_VERSION} \
-    && npm list -g @immich/cli --depth=0 | sed 's/.*@//' > /app/version \
+    && mkdir -p /app \
+    && npm list -g @immich/cli --depth=0 | sed -n 's/.*@//p' > /app/version \
     && npm cache clean --force \
     && pkg clean -ay && rm -rf /var/cache/pkg/* /root/.npm
 

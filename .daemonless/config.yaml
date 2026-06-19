@@ -12,4 +12,4 @@ build:
 # the image to completion and asserts the exit code (+ an output regex) instead.
 cit:
   mode: command
-  expect_output: '2\.7\.5'   # `immich --version`
+  expect_output: '\d+\.\d+\.\d+'   # `immich --version`

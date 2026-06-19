@@ -37,7 +37,8 @@ LABEL org.opencontainers.image.title="immich-cli" \
 # prebuilt py311 wheels to dodge cargo). Pin the exact version for reproducibility.
 RUN pkg update && pkg install -y ca_root_nss node22 npm-node22 \
     && npm install -g @immich/cli@${IMMICH_CLI_VERSION} \
-    && npm list -g @immich/cli --depth=0 | sed 's/.*@//' > /app/version \
+    && mkdir -p /app \
+    && npm list -g @immich/cli --depth=0 | sed -n 's/.*@//p' > /app/version \
     && npm cache clean --force \
     && pkg clean -ay && rm -rf /var/cache/pkg/* /root/.npm
 
@@ -49,7 +50,7 @@ RUN pkg update && pkg install -y ca_root_nss node22 npm-node22 \
 # Unprivileged runtime. /import is the conventional mount point for the media to
 # upload (mounted read-only at run time). Server URL + key are supplied at run
 # time via env (IMMICH_INSTANCE_URL, IMMICH_API_KEY) or `immich login`.
-RUN chmod -R a+rX /usr/local/lib/node_modules \
+RUN chmod -R a+rX /usr/local/lib/node_modules /app \
     && mkdir -p /import && chown -R bsd:bsd /import
 USER bsd
 WORKDIR /import

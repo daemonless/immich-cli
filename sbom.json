@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-19T15:48:42Z",
+  "generated": "2026-07-07T19:00:41Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
       "app_version": "15.0",
       "arch": "amd64",
-      "generated": "2026-06-19T15:47:23Z",
+      "generated": "2026-07-07T18:59:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -27,7 +27,7 @@
           },
           {
             "name": "FreeBSD-clibs",
-            "version": "15.0"
+            "version": "15.0p11"
           },
           {
             "name": "FreeBSD-ctf-lib",
@@ -95,7 +95,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p10"
+            "version": "15.0p11"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -107,7 +107,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.0p10"
+            "version": "15.0p11"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -115,7 +115,7 @@
           },
           {
             "name": "FreeBSD-zfs-lib",
-            "version": "15.0p10"
+            "version": "15.0p11"
           },
           {
             "name": "FreeBSD-zlib",
@@ -203,7 +203,7 @@
           },
           {
             "name": "node22",
-            "version": "22.22.2"
+            "version": "22.23.1"
           },
           {
             "name": "npm-node22",
@@ -219,7 +219,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.15_3"
+            "version": "3.11.15_4"
           },
           {
             "name": "readline",
@@ -251,7 +251,7 @@
           },
           {
             "name": "@immich/cli",
-            "version": "2.7.5"
+            "version": "3.0.1"
           },
           {
             "name": "@isaacs/fs-minipass",

@@ -54,7 +54,7 @@ RUN pkg update && pkg install -y ca_root_nss node22 npm-node22 \
 # Unprivileged runtime. /import is the conventional mount point for the media to
 # upload (mounted read-only at run time). Server URL + key are supplied at run
 # time via env (IMMICH_INSTANCE_URL, IMMICH_API_KEY) or `immich login`.
-RUN chmod -R a+rX /usr/local/lib/node_modules \
+RUN chmod -R a+rX /usr/local/lib/node_modules /app \
     && mkdir -p /import && chown -R bsd:bsd /import
 USER bsd
 WORKDIR /import

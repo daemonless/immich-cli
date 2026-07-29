@@ -14,6 +14,8 @@ ARG IMMICH_CLI_VERSION="latest"
 FROM ghcr.io/daemonless/base-core:${BASE_TAG}
 ARG FREEBSD_ARCH=amd64
 ARG IMMICH_CLI_VERSION
+ARG UPSTREAM_URL="https://registry.npmjs.org/@immich/cli/latest"
+ARG UPSTREAM_JQ=".version"
 
 LABEL org.opencontainers.image.title="immich-cli" \
       org.opencontainers.image.description="Immich command-line client (upload/import) on FreeBSD" \
@@ -23,7 +25,9 @@ LABEL org.opencontainers.image.title="immich-cli" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
       io.daemonless.category="Tools" \
-      io.daemonless.arch="${FREEBSD_ARCH}"
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.upstream-url="${UPSTREAM_URL}" \
+      io.daemonless.upstream-jq="${UPSTREAM_JQ}"
 
 # @immich/cli is pure JavaScript — runtime deps are fastq, chokidar, fast-glob,
 # lodash-es, micromatch and @immich/sdk, none of them native — so a global npm

@@ -38,7 +38,7 @@ LABEL org.opencontainers.image.title="immich-cli" \
 RUN pkg update && pkg install -y ca_root_nss node22 npm-node22 \
     && npm install -g @immich/cli@${IMMICH_CLI_VERSION} \
     && mkdir -p /app \
-    && npm list -g @immich/cli --depth=0 | sed -n 's/.*@//p' > /app/version \
+    && node -p "require('/usr/local/lib/node_modules/@immich/cli/package.json').version" > /app/version \
     && npm cache clean --force \
     && pkg clean -ay && rm -rf /var/cache/pkg/* /root/.npm
 

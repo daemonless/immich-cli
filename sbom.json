@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-20T14:53:58Z",
+  "generated": "2026-08-23T21:16:46Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
-      "app_version": "15.0",
+      "app_version": "3.1.0",
       "arch": "amd64",
-      "generated": "2026-08-20T14:53:13Z",
+      "generated": "2026-08-23T21:16:08Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -395,7 +395,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_4"
+            "version": "3.12.14"
           },
           {
             "licenses": [

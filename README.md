@@ -29,6 +29,8 @@ podman run --rm \
   ghcr.io/daemonless/immich-cli:latest
 ```
 
+Save as `run.sh`, then run `sh run.sh`.
+
 **Architectures:** amd64
 **User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
 **Base:** FreeBSD 15.1

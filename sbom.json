@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-05T13:36:10Z",
+  "generated": "2026-09-10T17:20:48Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
-      "app_version": "3.1.0",
+      "app_version": "3.2.0",
       "arch": "amd64",
-      "generated": "2026-09-05T13:35:29Z",
+      "generated": "2026-09-10T17:04:05Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -238,7 +238,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.128"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -410,7 +410,7 @@
               "APACHE20"
             ],
             "name": "simdjson",
-            "version": "4.6.8"
+            "version": "4.6.11"
           },
           {
             "licenses": [
@@ -446,7 +446,7 @@
           {
             "name": "@immich/cli",
             "purl": "",
-            "version": "3.1.0"
+            "version": "3.2.0"
           },
           {
             "name": "@isaacs/fs-minipass",

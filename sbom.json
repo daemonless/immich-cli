@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-15T22:02:15Z",
+  "generated": "2026-09-21T22:33:09Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
       "app_version": "3.2.2",
       "arch": "amd64",
-      "generated": "2026-09-15T22:01:33Z",
+      "generated": "2026-09-21T22:06:42Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -50,6 +50,13 @@
             ],
             "name": "FreeBSD-ctf-lib",
             "version": "15.0"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
+            "version": "15.0p8"
           },
           {
             "licenses": [
@@ -161,6 +168,13 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-rc",
+            "version": "15.0"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-resolvconf",
             "version": "15.0"
           },
           {
@@ -1273,7 +1287,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 60,
+        "freebsd": 62,
         "go": 0,
         "java": 0,
         "node": 164,
@@ -1281,7 +1295,7 @@
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 225
+        "total": 227
       }
     }
   }

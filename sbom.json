@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-29T09:50:57Z",
+  "generated": "2026-10-07T23:32:41Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
-      "app_version": "3.2.4",
+      "app_version": "3.3.0",
       "arch": "amd64",
-      "generated": "2026-09-29T09:50:12Z",
+      "generated": "2026-10-07T23:32:02Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -42,7 +42,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-clibs",
-            "version": "15.0p11"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -56,7 +56,7 @@
               "BSD-3-Clause"
             ],
             "name": "FreeBSD-dhclient",
-            "version": "15.0p8"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -91,7 +91,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-libcasper",
-            "version": "15.0p9"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -154,7 +154,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-openssl-lib",
-            "version": "15.0p13"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -182,7 +182,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.0p13"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -203,7 +203,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-utilities",
-            "version": "15.0p11"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -231,7 +231,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0p12"
+            "version": "15.0p14"
           },
           {
             "licenses": [
@@ -460,7 +460,7 @@
           {
             "name": "@immich/cli",
             "purl": "",
-            "version": "3.2.4"
+            "version": "3.3.0"
           },
           {
             "name": "@isaacs/fs-minipass",

@@ -3,6 +3,7 @@
 
 x-daemonless:
   class: cli
+  appjail: false
 
 build:
   variants:

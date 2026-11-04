@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-31T21:22:47Z",
+  "generated": "2026-11-04T11:02:21Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
       "app_version": "3.3.5",
       "arch": "amd64",
-      "generated": "2026-10-31T21:22:12Z",
+      "generated": "2026-11-04T11:01:36Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -280,7 +280,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -445,7 +445,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [

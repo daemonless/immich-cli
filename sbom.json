@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-04T20:18:46Z",
+  "generated": "2026-11-10T19:41:49Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
-      "app_version": "3.3.6",
+      "app_version": "3.4.0",
       "arch": "amd64",
-      "generated": "2026-11-04T20:18:07Z",
+      "generated": "2026-11-10T19:41:10Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -474,7 +474,7 @@
           {
             "name": "@immich/cli",
             "purl": "",
-            "version": "3.3.6"
+            "version": "3.4.0"
           },
           {
             "name": "@isaacs/fs-minipass",
@@ -674,7 +674,7 @@
           {
             "name": "chokidar",
             "purl": "",
-            "version": "4.0.3"
+            "version": "6.0.0"
           },
           {
             "name": "chownr",
@@ -1149,7 +1149,7 @@
           {
             "name": "readdirp",
             "purl": "",
-            "version": "4.1.2"
+            "version": "5.1.1"
           },
           {
             "name": "reusify",

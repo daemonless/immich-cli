@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-11T21:33:57Z",
+  "generated": "2026-11-18T22:37:30Z",
   "image": "immich-cli",
   "tags": {
     "latest": {
-      "app_version": "3.4.1",
+      "app_version": "3.4.2",
       "arch": "amd64",
-      "generated": "2026-11-11T21:33:18Z",
+      "generated": "2026-11-18T22:36:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -416,14 +416,14 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.2"
           },
           {
             "licenses": [
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.15"
+            "version": "3.12.16"
           },
           {
             "licenses": [
@@ -474,7 +474,7 @@
           {
             "name": "@immich/cli",
             "purl": "",
-            "version": "3.4.1"
+            "version": "3.4.2"
           },
           {
             "name": "@isaacs/fs-minipass",
